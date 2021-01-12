@@ -1,0 +1,494 @@
+$primary-color: #25335C;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+/*Pra ito sa whitespace minsan may space padin sa gilid kaya need mo nito*/
+body, html{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $primary-color;
+    color: #ffffff;
+    
+}
+.logo a{
+    font-family: 'Poppins';
+    font-size: 1.4rem;
+    color:#ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+
+}
+.logo{
+    padding: .5rem 2.5rem;
+    margin: .5rem;
+}
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navbar-links ul li{
+    list-style: none;
+
+
+}
+.navbar-links ul a{
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-family: 'Poppins';
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0rem 2rem;
+    display: block;
+}
+.navbar-links :hover{
+    color: rgb(145, 141, 141); ;
+}
+.toggle-button{
+     position: absolute;
+     top: 1.5rem;
+     right: 1rem;
+     display: none;
+     flex-direction: column;
+     justify-content: space-between;
+     width: 30px;
+     height: 21px;
+
+     .bar{
+         height: 3px;
+         width: 100%;
+         background-color: #ffffff;
+         border-radius: 10px;
+     
+     }
+}
+
+/*Ang media queries ay di required gamitin lagi pag kailangan lang talaga kumbaga forbidden technique 
+lagi lang tandaan gawin fluid ang mga elements asap*/
+@media (max-width : 800px){
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+    .navbar-links li a:hover {
+        font-size:1.5rem;
+        transition: .3s ease-in;
+       
+    }
+    
+}
+
+/* Dito na ung pina ka main content */
+.container{
+    display: flex;
+	width: 100%;
+	margin: auto;
+	height: 92.6vh;
+    align-items: center;
+    background: #25335C;
+    margin: auto;
+
+    
+
+    &::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 300px;
+        background: #fff;
+        clip-path: polygon(100% 0 , 0 100% , 100% 100%);
+        
+    }
+}
+.container .inner .img1 {
+    object-fit: cover;
+    width: 70px;
+    position: absolute;
+    top:40px;
+    right: 190px;
+
+
+}
+.container .inner .img2 {
+    object-fit: cover;
+    width: 70px;
+    position: absolute;
+    top:240px;
+    right: 90px;
+
+
+}
+.container .inner .img3 {
+    object-fit: cover;
+    width: 40px;
+    position: absolute;
+    top:100px;
+    right: 390px;
+
+
+}
+.container .inner .img4 {
+    object-fit: cover;
+    width: 70px;
+    position: absolute;
+    left:10px;
+    bottom: 100px;
+    
+    
+
+}
+.container .content{
+  
+  margin: 4rem;
+    
+}
+
+   
+   
+
+.container .content .text{
+    margin: auto;
+   font-size: 1.5rem;
+   font-weight: 500;
+   color: #ffffff;
+   font-family: 'Poppins';
+
+
+}
+.container .content .text h2{
+    background: linear-gradient( to right , #f1ecec , #8b8686);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.container .content .text p{
+    margin: 5px;
+    font-size: 1rem;
+    color:#ffffff;
+
+}
+.container .content .text i{
+    margin-right: 1rem;
+}
+.cover{
+    flex: 1;
+	display: flex;
+	justify-content: center;
+	height: 60vh;
+}
+.container .cover img{
+    position: absolute;
+    top: 190px;
+    right: 20px;
+    flex: 1;
+    height: 400px;
+    z-index: 9999;
+    object-fit: cover;
+    max-width: 90%;
+    margin-right: 2rem;
+
+}
+.cta{
+    padding: 50px 0px 0px 0px;
+
+}
+.cta .Signin{
+    margin-right: 30px;
+   border: none;
+    background: #F24A47;
+    width: 150px;
+    height: 50px;
+   cursor: pointer;
+   color: white;
+   font-size: 1REM;
+   border-radius: 6px;
+   outline: none;
+    &:hover{
+        background: #f01814
+    }
+
+}
+
+
+.cta .Signup{
+    border: 2px solid #ffffff;
+    background:transparent;
+    width: 150px;
+    height: 50px;
+   cursor: pointer;
+   color: white;
+   font-size: 1REM;
+   border-radius: 6px;
+   outline: none;
+   &:hover{
+
+    border: 2px solid #666464;
+    color: #666464;
+
+   }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .content{
+        margin: auto;
+        text-align: center;
+        
+
+    }
+    .content .text h2{
+        font-size: 30px;
+        margin: auto;
+
+    }
+    .content{
+        margin-top: 5vh;
+        align-items: center;
+    }
+    .content .text p{
+        text-align: left;
+        font-size: 18px;
+        margin: auto;
+    }
+    .container .cover img{
+        display: none;
+    }
+    .inner img{
+        display: none;
+    }
+}
+@media screen and (max-width: 460px){
+    .content .text h2{
+        font-size: 20px;
+        margin: auto;
+
+    }
+    .content{
+        
+        align-items: center;
+    }
+    .content .text p{
+        text-align: left;
+        font-size: 11px;
+        margin: auto;
+    }
+
+
+    .cta .Signin{
+     width: 100px;
+     height: 50px;
+
+    }
+    .cta .Signup{
+        width: 100px;
+        height: 50px;
+    }
+    .container{
+        &::before{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background: $primary-color#fff;
+            clip-path: polygon(100% 0 , 0 100% , 100% 100%);
+        }
+}
+
+}
+@media screen and (max-width: 360px){
+    .cta .Signin{
+        width: 70px;
+        height: 40px;
+        font-size: .8rem;
+   
+       }
+       .cta .Signup{
+           font-size: .8rem;
+           width: 70px;
+           height: 40px;
+       }
+}
+
+/*  Modal pop dito na sya macconstruct in design this is tricks para mapadali*/
+.Modal-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+   width: 100%;
+   height: 100vh;
+   background: rgba(0, 0, 0 ,0.5);
+   z-index: 9999;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   visibility: hidden;
+   opacity: 0;
+   transition: visibility 0s opacity 1s;
+}
+.bg-active{
+    visibility: visible;
+    opacity: 1;
+}
+.modal{
+    max-width: 100%;
+    background-color: #ffffff;
+    
+    border-radius: 1rem;
+    height: 600px;
+    width: 400px;
+    padding: 2rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Poppins';
+    
+    input[type='submit']{
+    
+   border: none;
+    background: $primary-color;
+    width: 250px;
+    height: 35px;
+   cursor: pointer;
+   color: white;
+   font-size: 1REM;
+   border-radius: 6px;
+   outline: none;
+   align-self: center;
+    &:hover{
+        background: rgb(63, 129, 214);
+        }
+
+    }
+    .content button{
+        position: absolute;
+        top: -130px;
+        left: 310px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        background: none;
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+      .input{
+          border: none;
+        border-bottom: 2px solid #9e9c9c;
+        margin: 5px 0px;
+        width: 100%;
+        padding: 0 5px;
+        height: 30px;
+        font-size: 1rem;
+        font-family: 'poppins';
+        background: none;
+        outline: none;
+        &:focus{
+            border-bottom: 2px solid #2691d9;
+            transition: 1s ease-in;
+        }
+    }
+    
+    label{
+        font-size: 1rem;
+        color: #615f5f;
+        font-family: 'poppins';
+        font-weight: 500;
+       
+
+    }
+    .showpass{
+        padding-bottom: 2rem;
+    }
+    .showpass label{
+       font-size: 1rem;
+       padding: 0.6rem ;
+       margin: .5rem;
+    }
+    .signup-link{
+        padding: .5rem;
+        align-self: center;
+        margin-right: 1rem;
+}
+    
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    h2{
+        font-size:1.6rem;
+        position: relative;
+        top: -130px;
+        font-family: sans-serif;
+        font-weight: 500;
+        color: $primary-color;
+        text-transform: uppercase;
+    }
+    
+}
+@media screen and(max-height:900px ){
+    .container{
+        height: 92.3vh;
+        &::before{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background: $primary-color#fff;
+            clip-path: polygon(100% 0 , 0 100% , 100% 100%);
+        }
+    }
+    
+}   

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" type="image/png " href="./img/urs.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+    <title>URS | File Management system</title>
+</head>
+<body>
+
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="">
+                 Dudith
+            </a>
+        </div>
+        <a href="#" class="toggle-button"> 
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="# ">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+<!-- End of the Navigation bar laging ugaliing magcomment para sa ibang programmer-->
+
+    <main>
+        <section class="container">
+            <div class="inner">
+                <img  class="img1" src="./img/Ellipse 1.png" alt="eclipse">
+                <img  class="img2" src="./img/Ellipse 1.png" alt="eclipse">
+                <img  class="img3" src="./img/Ellipse 1.png" alt="eclipse">
+                <img  class="img4" src="./img/Ellipse 1.png" alt="eclipse">
+            </div>
+            <div class="content">
+                <div class="text">
+                    <h2>Useful for teams to work 
+                        <br>collaborative and productive</h2>
+                        <p><i class="fa fa-check-circle" aria-hidden="true"></i>Write, plan and get organized.</p>
+                        <p><i class="fa fa-check-circle" aria-hidden="true"></i>Simple to use</p>
+                        <p><i class="fa fa-check-circle" aria-hidden="true"></i>User friendly </p>
+                        
+                </div>
+                <div class="cta">
+                    <button data-modal-target="#modal" class="Signin">Sign in</button>
+                    <button class="Signup">Sign up</button>
+                </div>
+                  
+            </div>
+            <div class="cover">
+                <img src="./img/messages.png" alt="task">
+            </div>
+        </section>        
+    </main>
+        <!-- End of the Main section -->
+
+
+         <!--Dito naman ung pop up modal para sa sign in at login page -->
+
+         <div id="overlay" class="Modal-bg"> 
+            <div class="modal">
+                <div class="header">
+                    <div class="content">
+                        <button data-close-button class="close-button">&times;</button>
+                    <h2> Sign in </h2>
+                    
+                </div>
+                        </div>
+                      
+                    <label for="User"> Username</label>
+                    <input  class="input" type="text" name="name" required >
+                    <span></span>
+                    <label for="Password"> Password</label>
+                    <input class="input" type="password"  id="myInput" required>
+                    <div class="showpass">
+                    <input type="checkbox" onclick="myFunction()"><label for="">Show</label>
+                    </div>
+                    <span></span>
+                    <input class="btn" type="submit" value="SIGN IN">
+                    
+                 <div class="signup-link">
+                     Not a member ? <a href="">Sign up</a>
+                 </div>   
+                 
+            </div>
+         </div>
+
+
+
+</body>
+</html>

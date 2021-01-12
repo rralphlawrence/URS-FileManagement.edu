@@ -1,0 +1,30 @@
+const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+toggleButton.addEventListener('click', ()=>{
+    navbarLinks.classList.toggle('active')
+
+})
+
+
+function myFunction() {
+    var x = document.getElementById("myInput");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
+
+var modalButton = document.querySelector('.Signin');
+var modalBG = document.querySelector('.Modal-bg');
+var modalClose = document.querySelector('.close-button')
+
+modalButton.addEventListener('click' , function(){
+    modalBG.classList.add('bg-active');
+});
+
+modalClose.addEventListener('click', function (){
+    modalBG.classList.remove('bg-active');
+})
+
