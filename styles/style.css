@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -456,7 +457,7 @@ lagi lang tandaan gawin fluid ang mga elements asap*/
 
 .modal .content button {
   position: absolute;
-  top: -130px;
+  top: -100px;
   left: 310px;
   cursor: pointer;
   border: none;
@@ -488,7 +489,7 @@ lagi lang tandaan gawin fluid ang mga elements asap*/
 .modal label {
   font-size: 1rem;
   color: #615f5f;
-  font-family: 'poppins';
+  font-family: 'roboto';
   font-weight: 500;
 }
 
@@ -527,10 +528,47 @@ lagi lang tandaan gawin fluid ang mga elements asap*/
   font-size: 1.6rem;
   position: relative;
   top: -130px;
-  font-family: sans-serif;
-  font-weight: 500;
+  font-family: 'Roboto';
+  font-weight: normal;
   color: #25335C;
   text-transform: uppercase;
+}
+
+/*radio buttons*/
+.radio {
+  -ms-flex-item-align: center;
+      align-self: center;
+  position: absolute;
+  top: -50px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  margin-bottom: 1rem;
+}
+
+.radio .radio__input {
+  display: none;
+}
+
+.radio .radio__input:checked + .radio__label {
+  border-bottom: 4px solid #0a47a3;
+}
+
+.radio .radio__label {
+  padding: 8px 14px;
+  font-size: 1REM;
+  font-family: sans-serif;
+  color: #5e5959;
+  cursor: pointer;
+  -webkit-transition: border-bottom 0.3s;
+  transition: border-bottom 0.3s;
+}
+
+.radio .radio__label:not(:last-of-type) {
+  border-right: 1px solid #ffff;
 }
 
 @media screen and (max-height: 900px) {

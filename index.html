@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="shortcut icon" type="image/png " href="./img/urs.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -74,8 +75,16 @@
             <div class="modal">
                 <div class="header">
                     <div class="content">
-                        <button data-close-button class="close-button">&times;</button>
+                        <button  class="close-button">&times;</button>
                     <h2> Sign in </h2>
+                    <div class="radio">
+                        <input type="radio" class="radio__input" value="Dean" name="myradio" id="myradio1">
+                        <label class="radio__label" for="myradio1"> Dean </label>
+                        <input type="radio" class="radio__input" value="Faculty" name="myradio" id="myradio2">
+                        <label class="radio__label" for="myradio2"> Faculty </label>
+                        <input type="radio" class="radio__input" value="M.I.S" name="myradio" id="myradio3">
+                        <label class="radio__label" for="myradio3"> M.I.S </label>
+                    </div>
                     
                 </div>
                         </div>
@@ -89,7 +98,10 @@
                     <input type="checkbox" onclick="myFunction()"><label for="">Show</label>
                     </div>
                     <span></span>
+                   
+                    
                     <input class="btn" type="submit" value="SIGN IN">
+
                     
                  <div class="signup-link">
                      Not a member ? <a href="">Sign up</a>
