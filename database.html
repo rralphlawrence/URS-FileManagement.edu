@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="/styles/admin.css">
+    <script src="jquery-3.5.1.min.js"></script>
+    <title>FMS |ADMIN</title>
+</head>
+<body>
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="side-logo">
+            <h2><span class ="fab fa-atlassian "></span><span>File Management</span></h2>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="admin.html"><span class="fas fa-user-shield"></span><span>Dashboard</span></a>
+                </li>
+               
+                <li>
+                    <a href="imported-files.html"><span class="fas fa-file-alt"></span><span>Imported Files</span></a>
+                </li>
+                <li>
+                    <a href=""  class="active"><span class="fas fa-database"></span><span>Database</span></a>
+                </li>
+               
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        <header>
+            <h2>
+        
+                <label for="nav-toggle" id="bars">
+                    <span class="fas fa-bars"></span>
+                </label>
+                Database
+            </h2>
+            
+            
+            <div class="search-wrapper">
+                <span class="fas fa-search"></span>
+                <input type="search" placeholder="search here">
+            </div>
+            <div class="user-wrapper">
+                <img src="./img/73015693_2625059834182799_8119458905118998528_o.jpg" height="40px" width="40px" alt="">
+            <div>
+               
+            </div>
+            </div>
+        </header>
+        <main> 
+            <div class="selector"  >
+                <div class="inner-select">
+                    <select name="table" id="table-selector" required>
+                        <option value="" disabled selected> SELECT SCHOOL YEAR</option>
+                        <option value="tbl-profiles">profiles</option>
+                        <option value="tbl-accounts">Accounts</option>
+                    </select>
+                  
+                </div>
+                <div class="select-modal">
+                    <button data-modal-target="#modal" class="modal-btn"><i class="fas fa-user-plus"></i> <span>ADD USER</span> </button>
+                </div>
+              
+            </div>
+            <script>
+                $(function() {
+            $('#table-selector').change(function(){
+                $('.tables').hide();
+                $('#' + $(this).val()).show();
+            });
+            });
+             </script>
+            <div id="tbl-profiles" class="tables" style="display: none">
+            <table class="table users"  >
+               
+                <thead>
+                    
+                    <th>EMPLOYEE ID</th>
+                    <th>FULLNAME</th>
+                    <th><select name="" required>
+                        <option value="" disabled selected>SEX</option>
+                        <option value="">MALE</option>
+                        <option value="">FEMALE</option>
+                      </select></th>
+                    <th>CONTACT NO</th>
+                    <th>Email</th>
+                    <th>Data created</th>
+                    <th>Last update</th>
+                    <th>ACTIONS</th>
+                   
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="EMPLOYEE-ID">121312 </td>
+                        <td data-label="FULL NAME">john delacruz</td>
+                        <td data-label="SEX">MALE</td>
+                        <td data-label="CONTACT NO">0941652121</td>
+                        <td data-label="Email">john@gmail.com</td>
+                        <td data-label="Data created">01/02/2021</td>
+                        <td data-label="Last update">01/06/2021 </td>
+                        <td data-label="ACTIONS"><button type="submit"><i id="edit" class="fas fa-pen-nib"></i></button> <span></span><button type="submit"><i id="trash" class="fas fa-trash-alt"></i></button></td> 
+                       
+                        
+                    </tr>
+                    <tr>
+                        <td data-label="EMPLOYEE-ID">121312 </td>
+                        <td data-label="FULL NAME">john delacruz</td>
+                        <td data-label="SEX">MALE</td>
+                        <td data-label="CONTACT NO">0941652121</td>
+                        <td data-label="Email">john@gmail.com</td>
+                        <td data-label="Data created">01/02/2021</td>
+                        <td data-label="Last update">01/06/2021 </td>
+                        <td data-label="ACTIONS"><button type="submit"><i id="edit" class="fas fa-pen-nib"></i></button> <span></span><button type="submit"><i id="trash" class="fas fa-trash-alt"></i></button></td> 
+                       
+                        
+                    </tr>
+                    <tr>
+                        <td data-label="EMPLOYEE-ID">121312 </td>
+                        <td data-label="FULL NAME">john delacruz</td>
+                        <td data-label="SEX">MALE</td>
+                        <td data-label="CONTACT NO">0941652121</td>
+                        <td data-label="Email">john@gmail.com</td>
+                        <td data-label="Data created">01/02/2021</td>
+                        <td data-label="Last update">01/06/2021 </td>
+                        <td data-label="ACTIONS"><button type="submit"><i id="edit" class="fas fa-pen-nib"></i></button> <span></span><button type="submit"><i id="trash" class="fas fa-trash-alt"></i></button></td> 
+                       
+                        
+                    </tr>
+                    <tr>
+                        <td data-label="EMPLOYEE-ID">121312 </td>
+                        <td data-label="FULL NAME">john delacruz</td>
+                        <td data-label="SEX">MALE</td>
+                        <td data-label="CONTACT NO">0941652121</td>
+                        <td data-label="Email">john@gmail.com</td>
+                        <td data-label="Data created">01/02/2021</td>
+                        <td data-label="Last update">01/06/2021 </td>
+                        <td data-label="ACTIONS"><button type="submit"><i id="edit" class="fas fa-pen-nib"></i></button> <span></span><button type="submit"><i id="trash" class="fas fa-trash-alt"></i></button></td> 
+                       
+                        
+                    </tr>
+                    <tr>
+                        <td data-label="EMPLOYEE-ID">121312 </td>
+                        <td data-label="FULL NAME">john delacruz</td>
+                        <td data-label="SEX">MALE</td>
+                        <td data-label="CONTACT NO">0941652121</td>
+                        <td data-label="Email">john@gmail.com</td>
+                        <td data-label="Data created">01/02/2021</td>
+                        <td data-label="Last update">01/06/2021 </td>
+                        <td data-label="ACTIONS"><button type="submit"><i id="edit" class="fas fa-pen-nib"></i></button> <span></span><button type="submit"><i id="trash" class="fas fa-trash-alt"></i></button></td> 
+                       
+                        
+                    </tr>
+                    <tr>
+                        <td data-label="EMPLOYEE-ID">121312 </td>
+                        <td data-label="FULL NAME">john delacruz</td>
+                        <td data-label="SEX">MALE</td>
+                        <td data-label="CONTACT NO">0941652121</td>
+                        <td data-label="Email">john@gmail.com</td>
+                        <td data-label="Data created">01/02/2021</td>
+                        <td data-label="Last update">01/06/2021 </td>
+                        <td data-label="ACTIONS"><button type="submit"><i id="edit" class="fas fa-pen-nib"></i></button> <span></span><button type="submit"><i id="trash" class="fas fa-trash-alt"></i></button></td> 
+                       
+                        
+                    </tr>
+                    <tr>
+                        <td data-label="EMPLOYEE-ID">121312 </td>
+                        <td data-label="FULL NAME">john delacruz</td>
+                        <td data-label="SEX">MALE</td>
+                        <td data-label="CONTACT NO">0941652121</td>
+                        <td data-label="Email">john@gmail.com</td>
+                        <td data-label="Data created">01/02/2021</td>
+                        <td data-label="Last update">01/06/2021 </td>
+                        <td data-label="ACTIONS"><button type="submit"><i id="edit" class="fas fa-pen-nib"></i></button> <span></span><button type="submit"><i id="trash" class="fas fa-trash-alt"></i></button></td> 
+                       
+                        
+                    </tr>
+                    <tr>
+                        <td data-label="EMPLOYEE-ID">121312 </td>
+                        <td data-label="FULL NAME">john delacruz</td>
+                        <td data-label="SEX">MALE</td>
+                        <td data-label="CONTACT NO">0941652121</td>
+                        <td data-label="Email">john@gmail.com</td>
+                        <td data-label="Data created">01/02/2021</td>
+                        <td data-label="Last update">01/06/2021 </td>
+                        <td data-label="ACTIONS"><button type="submit"><i id="edit" class="fas fa-pen-nib"></i></button> <span></span><button type="submit"><i id="trash" class="fas fa-trash-alt"></i></button></td> 
+                       
+                        
+                    </tr>
+                
+                 
+            </tbody>
+    </table>
+</div>
+<div id="tbl-accounts" class="tables" style="display: none">
+    <table class="table"  >
+       
+        <thead>
+            
+            <th>Empolyee ID</th>
+            <th>USER TYPE</th>
+            <th>EMAILADDRESS</th>
+            <th>PASSWORD</th>
+            <th>ACTIONS</th>
+            <th></th>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="EMPLOYEE-ID">11312312 </td>
+                <td data-label="USER-TYPE">PROFESSOR</td>
+                <td data-label="EMAIL">juandelacrus@gmail.com</td>
+                <td data-label="PASSWORD">EL231232EdawsdC 1</td>
+                <td data-label="ACTIONS"><button type="submit"><i id="edit" class="fas fa-pen-nib"></i></button> <span></span><button type="submit"><i id="trash" class="fas fa-trash-alt"></i></button></td> 
+                        <td><input type="checkbox"></td>
+                        
+                
+            </tr>
+            <tr>
+                <td data-label="EMPLOYEE-ID">11312312 </td>
+                <td data-label="USER-TYPE">PROFESSOR</td>
+                <td data-label="EMAIL">juandelacrus@gmail.com</td>
+                <td data-label="PASSWORD">EL231232EdawsdC 1</td>
+                <td data-label="ACTIONS"><button type="submit"><i id="edit" class="fas fa-pen-nib"></i></button> <span></span><button type="submit"><i id="trash" class="fas fa-trash-alt"></i></button></td> 
+                        <td><input type="checkbox"></td>
+                        
+                
+            </tr>
+            <tr>
+                <td data-label="EMPLOYEE-ID">11312312 </td>
+                <td data-label="USER-TYPE">PROFESSOR</td>
+                <td data-label="EMAIL">juandelacrus@gmail.com</td>
+                <td data-label="PASSWORD">EL231232EdawsdC 1</td>
+                <td data-label="ACTIONS"><button type="submit"><i id="edit" class="fas fa-pen-nib"></i></button> <span></span><button type="submit"><i id="trash" class="fas fa-trash-alt"></i></button></td> 
+                        <td><input type="checkbox"></td>
+                        
+                
+            </tr>
+            <tr>
+                <td data-label="EMPLOYEE-ID">11312312 </td>
+                <td data-label="USER-TYPE">PROFESSOR</td>
+                <td data-label="EMAIL">juandelacrus@gmail.com</td>
+                <td data-label="PASSWORD">EL231232EdawsdC 1</td>
+                <td data-label="ACTIONS"><button type="submit"><i id="edit" class="fas fa-pen-nib"></i></button> <span></span><button type="submit"><i id="trash" class="fas fa-trash-alt"></i></button></td> 
+                        <td><input type="checkbox"></td>
+                        
+                
+            </tr>
+            <tr>
+                <td data-label="EMPLOYEE-ID">11312312 </td>
+                <td data-label="USER-TYPE">PROFESSOR</td>
+                <td data-label="EMAIL">juandelacrus@gmail.com</td>
+                <td data-label="PASSWORD">EL231232EdawsdC 1</td>
+                <td data-label="ACTIONS"><button type="submit"><i id="edit" class="fas fa-pen-nib"></i></button> <span></span><button type="submit"><i id="trash" class="fas fa-trash-alt"></i></button></td> 
+                        <td><input type="checkbox"></td>
+                        
+                
+            </tr>
+            <tr>
+                <td data-label="EMPLOYEE-ID">11312312 </td>
+                <td data-label="USER-TYPE">PROFESSOR</td>
+                <td data-label="EMAIL">juandelacrus@gmail.com</td>
+                <td data-label="PASSWORD">EL231232EdawsdC 1</td>
+                <td data-label="ACTIONS"><button type="submit"><i id="edit" class="fas fa-pen-nib"></i></button> <span></span><button type="submit"><i id="trash" class="fas fa-trash-alt"></i></button></td> 
+                        <td><input type="checkbox"></td>
+                        
+                
+            </tr>
+            <tr>
+                <td data-label="EMPLOYEE-ID">11312312 </td>
+                <td data-label="USER-TYPE">PROFESSOR</td>
+                <td data-label="EMAIL">juandelacrus@gmail.com</td>
+                <td data-label="PASSWORD">EL231232EdawsdC 1</td>
+                <td data-label="ACTIONS"><button type="submit"><i id="edit" class="fas fa-pen-nib"></i></button> <span></span><button type="submit"><i id="trash" class="fas fa-trash-alt"></i></button></td> 
+                        <td><input type="checkbox"></td>
+                        
+                
+            </tr>
+            <tr>
+                <td data-label="EMPLOYEE-ID">11312312 </td>
+                <td data-label="USER-TYPE">PROFESSOR</td>
+                <td data-label="EMAIL">juandelacrus@gmail.com</td>
+                <td data-label="PASSWORD">EL231232EdawsdC 1</td>
+                <td data-label="ACTIONS"><button type="submit"><i id="edit" class="fas fa-pen-nib"></i></button> <span></span><button type="submit"><i id="trash" class="fas fa-trash-alt"></i></button></td> 
+                        <td><input type="checkbox"></td>
+                        
+                
+            </tr>
+            <tr>
+                <td data-label="EMPLOYEE-ID">11312312 </td>
+                <td data-label="USER-TYPE">PROFESSOR</td>
+                <td data-label="EMAIL">juandelacrus@gmail.com</td>
+                <td data-label="PASSWORD">EL231232EdawsdC 1</td>
+                <td data-label="ACTIONS"><button type="submit"><i id="edit" class="fas fa-pen-nib"></i></button> <span></span><button type="submit"><i id="trash" class="fas fa-trash-alt"></i></button></td> 
+                        <td><input type="checkbox"></td>
+                        
+                
+            </tr>
+        
+         
+    </tbody>
+</table>
+</div>
+
+        </main>
+
+            <div class="modal-bg">
+                <div class="modal">
+                    <div class="exit">
+                        <div class="exit-wrapper">
+                            <button  class="close">&times;</button>
+                        </div>
+                       
+                    </div>
+                  
+                    <div class="heading">
+                        <h3>User Account</h3>
+                        <small>Complete the form to add new user</small>
+                      
+                        
+                    </div>
+
+                        <form action="/">
+                    <div class="wrapper">
+                    <div class="input-data">
+                        <input type="text" required>
+                        <div class="underline">
+                </div>
+                <label>Employee ID</label>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="input-data">
+                        <input type="text" required>
+                        <div class="underline">
+                        <button type="button">Generate password</button>
+                </div>
+                <label>Generated password</label>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="input-data">
+                        <select name="year" required>
+                            <option value="" disabled selected>USER TYPE</option>
+                            <option value="">DEAN</option>
+                            <option value="">FACULTY</option> </select>
+                </div>
+               
+                    </div>
+                    <div class="submite">
+                        <div class="data">      
+                         <button ><i class="fas fa-user-plus"></i> ADD USER</button>
+                    </div>
+                   
+                        </div>
+                </div>
+                
+                        </form>
+
+                </div>
+            </div>
+
+
+            <div class="bg-modal">
+                <div class="modals">
+                    <div class="head">
+                     
+                        <h4>Administrator</h4>
+                    </div>
+                    <div class="options">
+                        <ul>
+                            <li><button> <span class="fas fa-cog"></span>Settings</button></li>
+                            <li><button> <span class="fas fa-question-circle"></span>Help</button></li>
+                            <li><button> <span class="fas fa-sign-out-alt"></span>Sign out</button></li>
+                            <li><button class="close-button"> <span class="fas fa-times-circle"></span>Close</button></li>
+                        </ul>
+                    </div>
+                   
+
+                </div>
+            </div>
+
+   
+    
+
+
+
+</body>
+
+
+</html>

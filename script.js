@@ -1,9 +1,8 @@
 const toggleButton = document.getElementsByClassName('toggle-button')[0]
 const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 
-toggleButton.addEventListener('click', ()=>{
-    navbarLinks.classList.toggle('active')
-
+toggleButton.addEventListener('click', function (){
+    navbarLinks.classList.toggle('active');
 })
 
 
@@ -27,4 +26,10 @@ modalButton.addEventListener('click' , function(){
 modalClose.addEventListener('click', function (){
     modalBG.classList.remove('bg-active');
 })
+window.onclick = function(event) {
+  if (event.target == modalBG) {
+    modalBG.classList.remove('bg-active');
+  }
+}
+
 

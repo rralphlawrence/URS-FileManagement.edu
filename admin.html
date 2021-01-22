@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="/styles/admin.css">
+    <title>FMS |ADMIN</title>
+</head>
+<body>
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="side-logo">
+            <h2><span class ="fab fa-atlassian "></span><span>File Management</span></h2>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="#" class="active"><span class="fas fa-user-shield"></span><span>Dashboard</span></a>
+                </li>
+            
+                <li>
+                    <a href="imported-files.html"><span class="fas fa-file-alt"></span><span>Imported Files</span></a>
+                </li>
+                <li>
+                    <a href="database.html"><span class="fas fa-database"></span><span>Database</span></a>
+                </li>
+               
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        <header>
+            <h2>
+        
+                <label for="nav-toggle" id="bars">
+                    <span class="fas fa-bars"></span>
+                </label>
+                Dashboard
+            </h2>
+            
+            
+            <div class="search-wrapper">
+                <span class="fas fa-search"></span>
+                <input type="search" placeholder="search here">
+            </div>
+            <div class="user-wrapper" onclick="myFunction();">
+                   <img src="./img/73015693_2625059834182799_8119458905118998528_o.jpg" height="40px" width="40px" alt="">
+            <div>
+               
+            </div>
+            </div>
+        </header>
+        <main>
+            <div class="cards">
+                <div class="card-single one">
+                    <div>
+                        <h2>Welcome back admin!</h2>
+                        <Span id="SPAN">Monitor and optimize your users</Span>
+                    </div>
+                    <div>
+                        <img id="welcome" src="./img/welcom.png" alt="">
+
+                    </div>
+                </div>
+                <div class="card-single two">
+                    <div>
+                        <h2>30</h2>
+                        <Span>USERS</Span>
+                    </div>
+                    <div>
+                        <span class="fas fa-envelope"></span>
+                    </div>
+                </div>
+                <div class="card-single three">
+                    <div>
+                        <h2>6567</h2>
+                        <Span>FILES</Span>
+                    </div>
+                    <div>
+                        <span class="fas fa-users"></span>
+                    </div>
+                </div>
+                <div class="card-single four">
+                    <div>
+                        <h2>25</h2>
+                        <Span>DECEMBER 2021</Span>
+                    </div>
+                    <div>
+                        <span class="fas fa-file-alt"></span>
+                    </div>
+                </div>
+            </div>    
+            </div>
+            
+        </main>
+            <div class="bg-modal">
+                <div class="modals">
+                    <div class="head">
+                     
+                        <h4>Administrator</h4>
+                    </div>
+                    <div class="options">
+                        <ul>
+                            <li><button> <span class="fas fa-cog"></span>Settings</button></li>
+                            <li><button> <span class="fas fa-question-circle"></span>Help</button></li>
+                            <li><button> <span class="fas fa-sign-out-alt"></span>Sign out</button></li>
+                            <li><button class="close-button"> <span class="fas fa-times-circle"></span>Close</button></li>
+                        </ul>
+                    </div>
+                   
+
+                </div>
+            </div>
+    </div>
+   
+</body>
+</html>

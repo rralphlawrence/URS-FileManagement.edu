@@ -49,20 +49,20 @@
             <div class="content">
                 <div class="text">
                     <h2>Useful for teams to work 
-                        <br>collaborative and productive</h2>
-                        <p><i class="fa fa-check-circle" aria-hidden="true"></i>Write, plan and get organized.</p>
+                        collaborative <br>and productive</h2>
+                        <p><i class="fa fa-check-circle" aria-hidden="true"></i>Write, plan and organized.</p>
                         <p><i class="fa fa-check-circle" aria-hidden="true"></i>Simple to use</p>
                         <p><i class="fa fa-check-circle" aria-hidden="true"></i>User friendly </p>
                         
                 </div>
                 <div class="cta">
-                    <button data-modal-target="#modal" class="Signin">Sign in</button>
-                    <button class="Signup">Sign up</button>
+                    <button data-modal-target="#modal" class="Signin"> <span>SIGN IN</span> </button>
+                    
                 </div>
                   
             </div>
             <div class="cover">
-                <img src="./img/messages.png" alt="task">
+                <img src="./img/illu.png" alt="task">
             </div>
         </section>        
     </main>
@@ -72,9 +72,11 @@
          <!--Dito naman ung pop up modal para sa sign in at login page -->
 
          <div id="overlay" class="Modal-bg"> 
-            <div class="modal">
+            <form class="modal" action="/" method="GET">
+              
                 <div class="header">
                     <div class="content">
+                        
                         <button  class="close-button">&times;</button>
                     <h2> Sign in </h2>
                     <div class="radio">
@@ -86,31 +88,41 @@
                         <label class="radio__label" for="myradio3"> M.I.S </label>
                     </div>
                     
+                  
                 </div>
                         </div>
                       
-                    <label for="User"> Username</label>
-                    <input  class="input" type="text" name="name" required >
-                    <span></span>
-                    <label for="Password"> Password</label>
-                    <input class="input" type="password"  id="myInput" required>
-                    <div class="showpass">
-                    <input type="checkbox" onclick="myFunction()"><label for="">Show</label>
-                    </div>
-                    <span></span>
-                   
-                    
-                    <input class="btn" type="submit" value="SIGN IN">
+                        <div class="wrapper">
+                            <div class="input-data username">
+                              <input class="user" type="text" required>
+                              <div class="underline">
+                      </div>
+                      <label>Username</label>
+                            </div>
+                            <div class="input-data password">
+                                <input id="myInput" class="pass" type="password" required>
+                                <div class="underline">
+                                    <div class="eye">
+                                        <i onclick="myFunction()" class="fas fa-eye"></i>
+                                    </div>
+                        </div>
+                        <label>Password</label>
+                              </div>
+                             
 
-                    
-                 <div class="signup-link">
-                     Not a member ? <a href="">Sign up</a>
-                 </div>   
+                              <div class="submit">
+                                <button type="submit"> LOGIN</button>
+                             </div>
+                             
                  
-            </div>
+                </form>
          </div>
 
 
+        
+         
+        
 
-</body>
+
+    </body>
 </html>
