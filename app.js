@@ -32,3 +32,17 @@ window.onclick = function(event) {
     modal.classList.remove('bg-active');
   }
 }
+
+
+/* activate*/
+var modalBtn = document.querySelector('.ables');
+var modals = document.querySelector('.activate-bg');
+var modalCl = document.querySelector('.cl')
+
+modalBtn.addEventListener('click' , function(){
+    modals.classList.add('bg-actives');
+});
+
+modalCl.addEventListener('click', function (){
+    modals.classList.remove('bg-actives');
+})

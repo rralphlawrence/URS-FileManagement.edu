@@ -30,6 +30,8 @@ $lighter:#e2f3f5;
 .side-logo span{
     display: inline-block;
     padding-right:1rem ;
+    text-align: center;
+    font-size: 1.3rem;
 }
 .sidebar-menu li{
     width: 100%;
@@ -56,7 +58,7 @@ padding-left: 1.1rem;
 }
 #nav-toggle:checked +.sidebar .side-logo h2 span,
 #nav-toggle:checked +.sidebar li {
-  padding-left: 1rem;
+  padding-left: 0rem;
    text-align: center;
 }
 
@@ -81,6 +83,7 @@ margin-left: 70px;
     border-radius: 30px 0px 0px 30px;
     
 }
+
 .sidebar-menu{
     margin-top: 1rem;
 }
@@ -92,7 +95,7 @@ margin-left: 70px;
 header{
 display: flex;
 justify-content: space-between;
-padding: 1rem 1.5rem;
+padding: 1rem 1rem;
 box-shadow:2px 2px 5px rgba(0,0,0,0.2);
 position: fixed;
 left: 345px;
@@ -125,7 +128,7 @@ header label span{
     display: flex;
     align-items: center;
     overflow-x: hidden;   
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
 }
 .search-wrapper span{
     display: inline-block;
@@ -134,9 +137,12 @@ header label span{
 }
 .search-wrapper input{
     height: 100%;
+    width: 400px;
     padding: .5rem;
-    border: none;
+    
     outline: none;
+    border: none;
+
     
 }
 .user-wrapper{
@@ -420,17 +426,17 @@ main{
     max-width: 100%;
     width: 100%;
     border-collapse: collapse;
-    font-size: .7rem;
+    font-size: .6rem;
    border-radius: 7px 7px 0 0;
     overflow: hidden;
     box-shadow:  2px 2px 20px rgba(0,0,0,0.15);
 }
 .table th{
-    background-color: #3d6cb9;
-    color: #fff;
+    background-color: #dddddd;
+    color: rgb(85, 85, 85);
 }
 .table thead tr{
-    font-weight: 600;
+    font-weight: normal;
 }
 .table td , .table th{
     padding: 12px 15px;
@@ -448,7 +454,7 @@ main{
     border-bottom:2px solid#3d6cb9 ;
 }
 .table tbody tr{
-    border-bottom: 1px solid #dddd;
+    border-bottom: 1px solid rgba(187, 186, 186, 0.867);
     cursor: pointer;
     transition: all .2s ease-in;
     &:hover{
@@ -457,9 +463,9 @@ main{
     }
 }
 .table th select{
-    
-    background:#d8dfe7  ;
-    color: rgb(235, 231, 231);
+    font-weight: 600;
+    background:#dddddd ;
+    color: rgb(85, 85, 85);
     outline: none;
     border: none;
     border-radius: 23px;
@@ -476,6 +482,7 @@ background: transparent;
 }
 .table td button{
     outline: none;
+  ;
   
 }
 #trash{
@@ -500,6 +507,10 @@ background: transparent;
         color: rgb(0, 68, 255);
 }
 }
+#ACTIVATE{
+    color: rgb(69, 155, 80);
+    cursor: pointer;
+}
 /*responsive table*/
 
 @media (max-width:768px){
@@ -513,13 +524,14 @@ background: transparent;
     }
     .table tr{
         margin-bottom: 12px;
+        border-bottom: 1px solid rgb(155, 153, 153);
     }
     .table td{
         text-align: right;
         padding-left: 50%;
         text-align: center;
         position: relative;
-        border: 1px solid #ddd;
+        border: 1px solid rgb(187, 187, 187);
     }
     .table td::before{
         content:attr(data-label);
@@ -548,7 +560,7 @@ select:required:invalid {
       justify-content: space-between;
       align-items: center;
       display: flex;
-      width: 95%;
+      width: 100%;
       padding: 2rem;
       box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
       border-radius: 15px;
@@ -623,39 +635,42 @@ select:required:invalid {
       display: flex;
       align-items: center;
       justify-content: center;
-      flex-wrap: wrap;
       h3{
+          flex: 3;
           margin: 10px 20px;
-          display: block;
-          width: 100%;
+
       }
 
-      small{
-          padding-right:5rem;
-          text-align: left;
-      }
    
-  }
-  .exit button{
-        color: rgb(163, 160, 160);
-      font-size: 2rem;
-      border: none;
-      cursor: pointer;
-      z-index: 100;
-      outline: none;
-      &:hover{
-          color: rgb(122, 7, 7);
+      button{
+        color: rgb(121, 116, 116);
+        background: transparent;
+        font-size: 2rem;
+        border: none;
+        cursor: pointer;
+        z-index: 100;
+        outline: none;
+        &:hover{
+            color: rgb(122, 7, 7);
+        }
       }
-   
-  }
+}
+.small h5{
+    padding: 2rem;
+  text-align: center;
+    font-size: .9rem;
+    font-weight: normal;
+    color: grey;
+}
+  
   .wrapper{
     width: 100%;
     background: #fff;
     padding: 30px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+   
   }
   .wrapper .input-data{
-    height: 40px;
+    height: 20px;
     width: 100%;
     position: relative;
   }
@@ -738,6 +753,7 @@ select:required:invalid {
       cursor: pointer;
       color: blue;
       border: none;
+      background: transparent;
   }
 }
 .bg-modal{
@@ -811,4 +827,104 @@ background: transparent;
     visibility: visible;
     opacity: 1;
     transition: transform 300ms ease-in-out , opacity 300ms ease-in-out;
+}
+.activate-bg{
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   visibility: hidden;
+ transition: visibility 0.3s opacity 1s;
+}
+.bg-actives{
+  visibility: visible;
+  opacity: 1;
+  transition: transform 300ms ease-in-out , opacity 300ms ease-in-out;
+}
+.actives{
+    background-color: #fff;
+   width: 500px;
+   height: 400px;
+   max-width: 98%;
+   border-radius: 10px;
+   padding: 15px;
+  text-align: center;
+}
+.formss input[type="checkbox"]{
+    cursor: pointer;
+    position: relative;
+    width: 80px;
+    height: 40px;
+    -webkit-appearance: none;
+    background: #c6c6c6c6;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  
+}
+.formss input:checked[type="checkbox"]{
+    background: #03a0f4;
+     
+
+}
+.formss input[type="checkbox"]:before{
+content: '';
+position: absolute;
+width: 40px;
+height: 40px;
+border-radius: 20px;
+top:0;
+left: 0;
+background: #ffffff;
+transform: scale(1.1);
+transition: .5s;
+box-shadow: 0px 2px 5px rgba(0,0,0,.3);
+}
+.formss input:checked[type="checkbox"]:before{
+left: 40px;
+}
+.prfile{
+    padding: 2rem;
+    font-size: 2rem;
+    color: #555555;
+    font-family: 'montserrat', sans-serif;
+    letter-spacing: 2.60px;
+}
+.actives .formss small{
+    padding: 1.6rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #757373;
+   
+}
+.save button{
+    width: 150px;
+    height: 40px;
+    margin-top: 3rem;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    color:rgb(248, 248, 248);
+    font-size: 1rem;
+   cursor: pointer; 
+
+   span{
+       color:#fff;
+   }
+}
+.sv{
+    margin-right: 1rem;
+    background: $primary;
+ 
+}
+.cl{
+    margin-left: 1rem;
+    background: rgb(119, 31, 31);
 }
