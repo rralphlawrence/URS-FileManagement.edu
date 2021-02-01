@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="./styles/dean.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>FMS |DEAN</title>
+</head>
+<body>
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="side-logo">
+            <h2><span id="logo" class ="fab fa-atlassian "></span><span>File Management</span></h2>
+        </div>
+        
+        <div class="sidebar-menu">
+            <div class="user-naming" id="naming">
+                <i id="icon" class='bx bx-user-circle nav__icon' ></i>
+                <h5>Carol carol</h5>
+                <h4>DEAN</h4>
+               
+            </div>
+            <ul>
+                <li>
+                    <a href="#" class="active"><span class="bx bxs-dashboard"></span><span>Dashboard</span></a>
+                </li>
+            
+                <li>
+                    <a href="account.html"><span class="bx bx-user-pin"></span><span>Account</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="bx bx-file"></span><span>Imported files</span></a>
+                </li>
+                <li>
+                    <a href="faculties.html"><span class="bx bxs-face"></span><span>Faculties</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="bx bx-bookmark"></span><span>Task</span></a>
+                </li>
+                <li>
+                    <a href="#"><span class="bx bxs-report"></span><span>REPORT</span></a>
+                </li>
+                <li>
+                    <a href="#"><span class="bx bx-log-out"></span><span>Logout</span></a>
+                </li>
+               
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        <header>
+            <h2>
+        
+                <label for="nav-toggle" id="bars">
+                    <span class="fas fa-bars"></span>
+                </label>
+                Dashboard
+            </h2>
+            
+            
+            <div class="search-wrapper">
+                <span class="fas fa-search"> <input type="search" placeholder="search here"></span>
+               
+            </div>
+            <div class="user-wrapper" onclick="myFunction();">
+                <i class='bx bx-user-circle nav__icon' ></i>
+            <div>
+               
+            </div>
+            </div>
+        </header>
+        <main>
+                <div class="cards">
+                    <div class="card-1 card">
+                        <div>
+                            <h4>Welcome <br> dean</h4>
+                        </div>
+                        <div>
+                            <img src="./img/welc.png"   width="400px" height="300px" alt="">
+                        </div>
+                    </div>
+                    
+                    <div class="card-2 card">
+                        <div class="count">
+                            <h2> 50 <span><i class='bx bx-file'></i></span></h2>
+                        </div>
+                        <div class="title">
+                          <strong>Files</strong>
+                        </div>
+                    </div>
+                    <div class="card-3 card">
+                        <div class="count">
+                            <h2> 40 <span><i class="far fa-calendar-check"></i></span></h2>
+                        </div>
+                        <div class="title">
+                            <strong> Submitted on time</strong>
+                        </div>
+                    </div>
+                    <div class="card-4 card">
+                        <div class="count">
+                            <h2> 30 <span><i class="fas fa-clock"></i></span></h2>
+                        </div>
+                        <div class="title">
+                            <strong> Submitted late</strong>
+                        </div>
+                    </div>
+                    <div class="card-5 card">
+                        <div class="date">
+                        
+                        </div>
+                        <div class="count">
+                            <h2> 25 <span><i class="fas fa-calendar-alt"></i></span></h2>
+                        </div>
+                        <div class="title">
+                            <strong>DECEMBER</strong>
+                            <strong> 2021</strong>
+                        </div>
+                    </div>
+                    <div class="card-6 card">
+                        <div class="count">
+                            <h2> 12 <span><i class="bx bxs-face"></i></span></h2>
+                        </div>
+                        <div class="title">
+                            <strong> Faculty</strong>
+                        </div>
+                    </div>
+                    <div class="card-7 card">
+                        <div class="count">
+                            <h2> 10 <span><i class="fas fa-spinner"></i></span></h2>
+                        </div>
+                        <div class="title">
+                            <strong> In progress</strong>
+                        </div>
+                    </div>
+                </div>
+          
+
+        </main>
+    </div>
+    </body>
+</html>

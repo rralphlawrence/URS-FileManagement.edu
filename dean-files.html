@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="./styles/dean.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>FMS |DEAN</title>
+</head>
+<body>
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="side-logo">
+            <h2><span id="logo" class ="fab fa-atlassian "></span><span>File Management</span></h2>
+        </div>
+        
+        <div class="sidebar-menu">
+            <div class="user-naming" id="naming">
+                <i id="icon" class='bx bx-user-circle nav__icon' ></i>
+                <h5>Carol carol</h5>
+                <h4>DEAN</h4>
+               
+            </div>
+            <ul>
+                <li>
+                    <a href="Dean.html"><span class="bx bxs-dashboard"></span><span>Dashboard</span></a>
+                </li>
+            
+                <li>
+                    <a href="account.html" ><span class="bx bx-user-pin"></span><span>Account</span></a>
+                </li>
+                <li>
+                    <a href=""  class="active"><span class="bx bx-file"></span><span>Imported files</span></a>
+                </li>
+                <li>
+                    <a href="faculties.html"><span class="bx bxs-face"></span><span>Faculties</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="bx bx-bookmark"></span><span>Task</span></a>
+                </li>
+                <li>
+                    <a href="#"><span class="bx bxs-report"></span><span>REPORT</span></a>
+                </li>
+                <li>
+                    <a href="#"><span class="bx bx-log-out"></span><span>Logout</span></a>
+                </li>
+               
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        <header>
+            <h2>
+        
+                <label for="nav-toggle" id="bars">
+                    <span class="fas fa-bars"></span>
+                </label>
+                Dashboard
+            </h2>
+            
+            
+            <div class="search-wrapper">
+                <span class="fas fa-search"> <input type="search" placeholder="search here"></span>
+               
+            </div>
+            <div class="user-wrapper" onclick="myFunction();">
+                <i class='bx bx-user-circle nav__icon' ></i>
+            <div>
+               
+            </div>
+            </div>
+        </header>
+        <main>
+               
+            <div class="search-files">
+                <form action="./includes/dbprocess.php" method="GET">
+                    <div class="tbl-files" id="fls">
+                       <div class="inner-tbl">
+                                <div class="labels">
+                                  <label for="file-type">FILE</label>
+                                </div>
+                                <div class="file-type">
+                                    <select name="file-type" id="file">
+                                    <option value="">SELECT OPTION HERE</option>
+                                    <option value="pdf">PDF</option>
+                                    <option value="docx">WORD DOCUMENT</option>
+                                    <option value="ppt">POWER POINT</option>
+                                    </select>
+                                </div>
+                             </div>
+                             <div class="inner-tbl">
+                                <div class="labels">
+                                  <label for="AUTHOR">AUTHOR</label>
+                                </div>
+                                <div class="file-type">
+                                    <select name="AUTHOR" id="AUTHOR">
+                                    <option value="">SELECT OPTION HERE</option>
+                                    <option value="MARK">MARK</option>
+                                    <option value="KRAM">KRAM</option>
+                                    <option value="MAKR">MAKR</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="inner-tbl">
+                                <div class="labels">
+                                  <label for="COURSE">COURSE</label>
+                                </div>
+                                
+                                <div class="COURSE">
+                                    <select name="COURSE" id="COURSE">
+                                    <option value="">SELECT OPTION HERE</option>
+                                    <option value="IT9">IT9</option>
+                                    <option value="ELEC1">ELEC1</option>
+                                    <option value="ELEC2">ELEC2</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="inner-tbl">
+                                <div class="labels">
+                                  <label for="SY">SY</label>
+                                </div>
+                                <div class="file-type">
+                                    <select name="SY" id="SY">
+                                    <option value="">SELECT OPTION HERE</option>
+                                    <option value="2020-2021">2020-2021</option>
+                                    <option value="2021-2022">2021-2022</option>
+                                    <option value="2022-2023">2022-2023</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="inner-tbl">
+                                <div class="labels">
+                                  <label for="SEMESTER">SEMESTER</label>
+                                </div>
+                                <div class="file-type">
+                                    <select name="SEMESTER" id="SEMESTER">
+                                    <option value="">SELECT OPTION HERE</option>
+                                    <option value="FIRST">FIRST</option>
+                                    <option value="SECOND">SECOND</option>
+                                   
+                                    </select>
+                                </div>
+                            </div>
+    
+                            <div class="search" id="search">
+                                <button class="btn2" type="submit"><span class='fas fa-search'></span>SEARCH</button>
+                            </div>
+                    </div>
+                </form>
+            </div>
+
+            <table class="table">
+               
+                <thead>
+                    
+                    <th>ID</th>
+                    <th>FILE TYPE</th>
+                    <th>AUTHOR</th>
+                    <th>COURSE</th>
+                   <th>SY</th>
+                   <th>SEMESTER</th>
+                    <th><select name="STATUS" required>
+                        <option value="" disabled selected>STATUS</option>
+                        <option value="">LATE</option>
+                        <option value="">ON-TIME</option>
+                       
+                      </select></th>
+                    <th>ACTIONS</th>
+                  
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="ID">1 </td>
+                        <td data-label="FILE-TYPE">PDF</td>
+                        <td data-label="AUTHOR">JOHN MARK BUGARIN</td>
+                        <td data-label="COURSE">ELEC 1</td>
+                        <td data-label="YEAR-LEVEL">2021-2022</td>
+                        <td data-label="SEMESTER">FIRST</td>
+                        <td data-label="STATUS"><small class="ontime">ON-TIME</small></td>
+                        <td data-label="ACTIONS"><button type="submit"><i id="download" class="fas fa-arrow-circle-down"></i></button> <span></span><button type="submit"><i id="trash" class="fas fa-trash-alt"></i></button></td> 
+                       
+                        
+                    </tr>
+                    <tr>
+                        <td data-label="ID">1 </td>
+                        <td data-label="FILE-TYPE">PDF</td>
+                        <td data-label="AUTHOR">JOHN MARK BUGARIN</td>
+                        <td data-label="COURSE">ELEC 1</td>
+                        <td data-label="YEAR-LEVEL">2021-2022</td>
+                        <td data-label="SEMESTER">FIRST</td>
+                        <td data-label="STATUS"><small class="over">OVER-DUE</small></td>
+                        <td data-label="ACTIONS"><button type="submit"><i id="download" class="fas fa-arrow-circle-down"></i></button> <span></span><button type="submit"><i id="trash" class="fas fa-trash-alt"></i></button></td> 
+                       
+                        
+                    </tr>
+                    
+                 
+                </tbody>
+        </table>
+                   
+        </main>
+    </div>
+    </body>
+</html>

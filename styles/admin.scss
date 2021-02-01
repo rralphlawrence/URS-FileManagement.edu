@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-$primary:#0e153a;
+$primary:#2f44a8;
 $secondary:#2F89FC;
 $lighter:#e2f3f5;
 *{
@@ -927,4 +927,5 @@ left: 40px;
 .cl{
     margin-left: 1rem;
     background: rgb(119, 31, 31);
+    flex-wrap: wrap;
 }

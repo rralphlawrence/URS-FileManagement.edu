@@ -34,7 +34,7 @@ lagi lang tandaan gawin fluid ang mga elements asap*/
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #25335C;
+  background-color: #3d5af1;
   color: #ffffff;
 }
 
@@ -378,7 +378,7 @@ lagi lang tandaan gawin fluid ang mga elements asap*/
   outline: 0;
   border: none;
   color: white;
-  background: #25335C;
+  background: #3d5af1;
   margin-top: 2rem;
   cursor: pointer;
 }
@@ -481,7 +481,7 @@ lagi lang tandaan gawin fluid ang mga elements asap*/
     left: 0;
     width: 100%;
     height: 0;
-    background: #25335C #fff;
+    background: #3d5af1 #fff;
     -webkit-clip-path: polygon(100% 0, 0 100%, 100% 100%);
             clip-path: polygon(100% 0, 0 100%, 100% 100%);
   }
@@ -670,7 +670,7 @@ lagi lang tandaan gawin fluid ang mga elements asap*/
   top: -130px;
   font-family: 'POPPINS';
   font-weight: normal;
-  color: #25335C;
+  color: #3d5af1;
   text-transform: uppercase;
 }
 

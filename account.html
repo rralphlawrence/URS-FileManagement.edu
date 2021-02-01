@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="./styles/dean.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>FMS |DEAN</title>
+</head>
+<body>
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="side-logo">
+            <h2><span id="logo" class ="fab fa-atlassian "></span><span>File Management</span></h2>
+        </div>
+        
+        <div class="sidebar-menu">
+            <div class="user-naming" id="naming">
+                <i id="icon" class='bx bx-user-circle nav__icon' ></i>
+                <h5>Carol carol</h5>
+                <h4>DEAN</h4>
+               
+            </div>
+            <ul>
+                <li>
+                    <a href="Dean.html"><span class="bx bxs-dashboard"></span><span>Dashboard</span></a>
+                </li>
+            
+                <li>
+                    <a href=""  class="active"><span class="bx bx-user-pin"></span><span>Account</span></a>
+                </li>
+                <li>
+                    <a href="dean-files.html"><span class="bx bx-file"></span><span>Imported files</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="bx bxs-face"></span><span>Faculties</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="bx bx-bookmark"></span><span>Task</span></a>
+                </li>
+                <li>
+                    <a href="#"><span class="bx bxs-report"></span><span>REPORT</span></a>
+                </li>
+                <li>
+                    <a href="#"><span class="bx bx-log-out"></span><span>Logout</span></a>
+                </li>
+               
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        <header>
+            <h2>
+        
+                <label for="nav-toggle" id="bars">
+                    <span class="fas fa-bars"></span>
+                </label>
+                Dashboard
+            </h2>
+            
+            
+            <div class="search-wrapper">
+                <span class="fas fa-search"> <input type="search" placeholder="search here"></span>
+               
+            </div>
+            <div class="user-wrapper" onclick="myFunction();">
+                <i class='bx bx-user-circle nav__icon' ></i>
+            <div>
+               
+            </div>
+            </div>
+        </header>
+        <main>
+                <div class="illustration">
+                    <div class="background">
+                   <img class="pic" src="./img/hellodean.png" alt="">
+                    </div>
+                    <div class="create">
+                        
+                        <p>Hello Dean ! <br> you can customize your account</p>
+                     
+                    </div>
+                </div>
+                    <div class="update-profile">
+                        <div class="heading-name">
+                            <h2> Cardo dalisay</h2>
+                            <small>Dean</small>
+                            <button class="btn-open" ><i class="far fa-edit">Edit account</i></button>
+                        </div>
+                        <div class="information">
+                            <div class="profile-body">
+                                  <small>Employee ID</small>
+                                    <h3>0914612122</h3>
+                            </div>
+                            <div class="profile-body">
+                                <small>Contact no</small>
+                                  <h3>0914612122</h3>
+                          </div>
+                          <div class="profile-body">
+                            <small>EMAIL</small>
+                              <h3><a href="www.gmail.com" target="_blank">Cardodalisay@gmail.com</a> </h3>
+                      </div>
+                      <div class="profile-body">
+                        <small>PASSWORD</small>
+                          <h3>************</h3>
+                  </div>
+                        </div>
+                    </div>
+                    
+                    <div class="profile-modal">
+                        <div class="profile-bg">
+
+                            <div class="heading">
+                                <h3>Edit Account</h3>
+                                <button  class="close_multi">&times;</button>
+                            </div>
+                            <div class="small">
+                             <h5>Complete the form and save your data</h5> 
+                            </div>
+        
+                                <form action="/">
+                            <div class="wrapper">
+                            <div class="input-data">
+                                <input type="text" required>
+                                <div class="underline">
+                        </div>
+                        <label>Full name</label>
+                            </div>
+                            
+                        </div>
+                        <div class="wrapper">
+                            <div class="input-data">
+                                <input type="text" required>
+                                <div class="underline">
+                        </div>
+                        <label>Employee ID</label>
+                            </div>
+                        </div>
+                        <div class="wrapper">
+                            <div class="input-data">
+                                <input type="text" required>
+                                <div class="underline">
+                        </div>
+                        <label>Email</label>
+                            </div>
+                        </div>
+                        <div class="wrapper">
+                            <div class="input-data">
+                                <input type="text" required>
+                                <div class="underline">
+                        </div>
+                        <label>Contact No.</label>
+                            </div>
+                        </div>
+                        <div class="wrapper">
+                            <div class="input-data">
+                                <input type="date" required>
+                                <div class="underline">
+                        </div>
+                       
+                            </div>
+                            <label>Birthdate</label>
+                        </div>
+                        
+                        <div class="wrapper">
+                            <div class="input-data">
+                                <input type="password" required>
+                                <div class="underline">
+                              
+                        </div>
+                        <label>Password</label>
+                            </div>
+                            
+                        </div>
+                        <div class="wrapper">
+                            <div class="input-data">
+                           <select name="SEX" id="SEX">
+                               <option value="">SEX</option>
+                               <option value="MALE">MALE</option>
+                               <option value="FEMALE">FEMALE</option>
+                           </select>
+                            
+                        </div>
+                   
+                            </div>
+                        <div class="wrapper">
+                            <div class="input-data">
+                            
+                        </div>
+                       <script>
+
+                        var modalBtn = document.querySelector('.btn-open');
+                        var modals = document.querySelector('.profile-modal');
+                        var modalCl = document.querySelector('.close_multi')
+                        
+                        modalBtn.addEventListener('click' , function(){
+                            modals.classList.add('profile-actives');
+                        });
+                        
+                        modalCl.addEventListener('click', function (){
+                            modals.classList.remove('profile-actives');
+                        })
+                        
+                    
+                    </script>
+                            </div>
+                            <div class="submite">
+                                <div class="data">      
+                                 <button ><i class="fas fa-user-plus"></i> SAVE CHANGES</button>
+                            </div>
+                           
+                                </div>
+                        </div>
+                        
+                                </form>
+                        </div>
+                        
+                    </div>
+        </main>
+    </div>
+    </body>
+</html>

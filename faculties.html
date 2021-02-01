@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  
+    <link rel="stylesheet" href="./styles/dean.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>FMS |DEAN</title>
+</head>
+<body>
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="side-logo">
+            <h2><span id="logo" class ="fab fa-atlassian "></span><span>File Management</span></h2>
+        </div>
+        
+        <div class="sidebar-menu">
+            <div class="user-naming" id="naming">
+                <i id="icon" class='bx bx-user-circle nav__icon' ></i>
+                <h5>Carol carol</h5>
+                <h4>DEAN</h4>
+               
+            </div>
+            <ul>
+                <li>
+                    <a href="Dean.html"><span class="bx bxs-dashboard"></span><span>Dashboard</span></a>
+                </li>
+            
+                <li>
+                    <a href="account.html" ><span class="bx bx-user-pin"></span><span>Account</span></a>
+                </li>
+                <li>
+                    <a href="dean-files.html" ><span class="bx bx-file"></span><span>Imported files</span></a>
+                </li>
+                <li>
+                    <a href=""  class="active"><span class="bx bxs-face"></span><span>Faculties</span></a>
+                </li>
+                <li>
+                    <a href="dean-task.html"><span class="bx bx-bookmark"></span><span>Task</span></a>
+                </li>
+                <li>
+                    <a href="#"><span class="bx bxs-report"></span><span>REPORT</span></a>
+                </li>
+                <li>
+                    <a href="#"><span class="bx bx-log-out"></span><span>Logout</span></a>
+                </li>
+               
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        <header>
+            <h2>
+        
+                <label for="nav-toggle" id="bars">
+                    <span class="fas fa-bars"></span>
+                </label>
+                Dashboard
+            </h2>
+            
+            
+            <div class="search-wrapper">
+                <span class="fas fa-search"> <input type="search" placeholder="search here"></span>
+               
+            </div>
+            <div class="user-wrapper" onclick="myFunction();">
+                <i class='bx bx-user-circle nav__icon' ></i>
+            <div>
+               
+            </div>
+            </div>
+        </header>
+        <main>
+               
+            <div class="cover">
+                <div class="background">
+               <img class="pic" src="./img/faculty.png" alt="">
+                </div>
+                <div class="create">
+                    
+                    <p>Find your collegues</p>
+                 
+                </div>
+            </div>
+                   
+            <div class="files">
+                <form >
+                    <div class="tbl" id="fls">
+                        <div class="search" id="search">
+                            <button class="btn2" type="submit"><span class='fas fa-search'></span>SEARCH</button>
+                        </div>
+                       <div class="inner">
+                                
+                                <div class="file"> 
+                                 
+                                    <select name="semester" id="semester">
+                                    <option value="">SEMESTER</option>
+                                    <option value="FIRST">FIRST</option>
+                                    <option value="SECOND">SECOND</option>
+                                   
+                                    </select>
+                                </div>
+                             </div>
+                             <div class="inner">
+                                <div class="file">
+                                  
+                                    <select name="schoolyear" id="schoolyear">
+                                    <option value="">SCHOOL-YEAR</option>
+                                    <option value="2020-2021">MARK</option>
+                                    <option value="2020-2022">KRAM</option>
+                                 
+                                    </select>
+                                </div>
+                            </div>
+                           
+    
+                          
+                            <div class="search" id="search">
+                                <button class="open-faculty" type="button"><i class='bx bxs-user-plus'></i>RECRUIT</button>
+                            </div>
+                    </div>
+                </form>
+            </div>
+
+            <table class="table users"  >
+               
+                <thead>
+                    
+                    <th>EMPLOYEE ID</th>
+                    <th>FULLNAME</th>
+                    <th><select name="" required>
+                        <option value="" disabled selected>SEX</option>
+                        <option value="">MALE</option>
+                        <option value="">FEMALE</option>
+                      </select></th>
+                    <th>CONTACT NO</th>
+                    <th>Email</th>
+                    <th>ACTIONS</th>
+                  
+                   
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="EMPLOYEE-ID"> </td>
+                        <td data-label="FULL NAME"></td>
+                        <td data-label="SEX"></td>
+                        <td data-label="CONTACT NO"></td>
+                        <td data-label="Email"></td>
+                        <td data-label="Email"></td>
+                        <td data-label="ACTIONS"></td>
+                       
+                      
+                       
+                        
+                    </tr>
+                   
+                 
+            </tbody>
+    </table>
+    
+           
+                    <div class="faculty-modal">
+                        <div class="faculty-bg">
+
+                            <div class="heading">
+                                <h3>Recruit your collegues</h3>
+                                <button  class="exit">&times;</button>
+                            </div>
+                            <div class="small">
+                             <h5>Complete the form to add an recipients</h5> 
+                            </div>
+        
+                                <form>
+                            <div class="wrapper">
+                            <div class="input-data">
+                                <input type="text" required>
+                                <div class="underline">
+                        </div>
+                        <label>SCHOOL YEAR</label>
+                            </div>
+                        </div>
+                        <div class="wrapper">
+                            <div class="input-data">
+                                <select name="USER" required>
+                                    <option value="" disabled selected>AVAILABLE USER</option>
+                                    <option value="">AMRDAW</option>
+                                    <option value="">FACUAWDTY</option> </select>
+                                <div class="underline">
+                        </div>
+                            </div>
+                        </div>
+                        <div class="wrapper">
+                            <div class="input-data">
+                                <select name="year" required>
+                                    <option value="SEM" disabled selected>SEM</option>
+                                    <option value="FIRST">FIRST</option>
+                                    <option value="SECOND">SECOND</option> </select>
+                                <div class="underline">
+                                </form>
+                        </div>
+                            </div>
+                        </div>
+                        <div class="wrapper">
+                            <div class="input-data button">
+                            <button class="recruit"> <i class='bx bxs-user-detail'></i>RECRUIT </button>
+                        </div>
+                    </div>
+                </div>
+                        <script>
+
+                            var modalBtn = document.querySelector('.open-faculty');
+                            var modals = document.querySelector('.faculty-modal');
+                            var modalClose = document.querySelector('.exit')
+                            
+                            modalBtn.addEventListener('click' , function(){
+                                modals.classList.add('faculty-active');
+                            });
+                            
+                            modalClose.addEventListener('click', function (){
+                                modals.classList.remove('faculty-active');
+                            })
+
+                            window.onclick = function(event) {
+                            if (event.target == modals) {
+                                modals.classList.remove('faculty-active');
+                            }
+                            }
+                            
+                        
+                        </script>
+
+        </main>
+    </div>
+    </body>
+</html>
