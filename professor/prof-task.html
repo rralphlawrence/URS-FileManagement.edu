@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  
+    <link rel="stylesheet" href="../styles/prof.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>FMS |DEAN</title>
+</head>
+<body>
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="side-logo">
+            <h2><span id="logo" class ="fab fa-atlassian "></span><span>File Management</span></h2>
+        </div>
+        
+        <div class="sidebar-menu">
+            <div class="user-naming" id="naming">
+                <i id="icon" class='bx bx-user-circle nav__icon' ></i>
+                <h5>Carol carol</h5>
+                <h4>PROFESSOR</h4>
+               
+            </div>
+            <ul>
+                <li>
+                    <a href="prof-dashboard.html"><span class="bx bxs-dashboard"></span><span>Dashboard</span></a>
+                </li>
+            
+                <li>
+                    <a href="prof-account.html" ><span class="bx bx-user-pin"></span><span>Account</span></a>
+                </li>
+                <li>
+                    <a href="prof-files.html" ><span class="bx bx-file"></span><span>Imported files</span></a>
+                </li>
+               
+                <li>
+                    <a href="" class="active"><span class="bx bx-bookmark"></span><span>Task</span></a>
+                </li>
+                <li>
+                    <a href="prof-report.html"><span class="bx bxs-report"></span><span>REPORT</span></a>
+                </li>
+                <li>
+                    <a href="#"><span class="bx bx-log-out"></span><span>Logout</span></a>
+                </li>
+               
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        <header>
+            <h2>
+        
+                <label for="nav-toggle" id="bars">
+                    <span class="fas fa-bars"></span>
+                </label>
+                Dashboard
+            </h2>
+            
+            
+            <div class="search-wrapper">
+                <span class="fas fa-search"> <input type="search" placeholder="search here"></span>
+               
+            </div>
+            <div class="user-wrapper" onclick="myFunction();">
+                <i class='bx bx-user-circle nav__icon' ></i>
+            <div>
+               
+            </div>
+            </div>
+        </header>
+        <main>
+               
+            <div class="cover-task">
+                <div class="background">
+               <img class="pic" src="../img/task.png" alt="">
+                </div>
+                <div class="task-word">
+                    
+                    <p>Monitor your task </p>
+                 
+                </div>
+            </div>
+          
+            <table class="table users"  >
+               
+                <thead>
+                    
+                   
+                   
+                    <th>DATE SCHEDULED</th>
+                    <th>COURSE</th>
+                    <th>STATUS</th>
+                    <th>DEADLINE</th>
+                    <th>FILE</th>
+                    <th>ACTIONS</th>
+                  
+                   
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="DATE SCHEDULED"> </td>
+                        <td data-label="COURSE"></td>
+                        <td data-label="STATUS"></td>
+                        <td data-label="DEADLINE"></td>
+                        <td data-label="FILE"></td>
+                        <td data-label="ACTIONS">   <input type="file" class="upload-bx"> <button type="submit"><i id="download" class="fas fa-upload"></i></button>  </td>
+                        
+                    </tr>
+                    
+                   
+                 
+            </tbody>
+    </table>
+    <div class="yourtask-modal">
+        <div class="your-bg">
+    
+            <div class="heading">
+                <h3>Assign your collegues</h3>
+                <button  class="btn-exit">&times;</button>
+            </div>
+            <div class="small">
+             <h5>Complete the form to add an recipients</h5> 
+            </div>
+    
+                <form>
+                    <div class="wrapper">
+                        <div class="input-data">
+                            <input type="text" >
+                           
+                  
+                    <label for="schedule">FILE</label>
+                        </div>
+                    </div>
+    
+        <div class="wrapper">
+            <div class="input-data">
+                <input type="date" id="schedule" name="schedule" >
+               
+      
+        <label for="schedule">Dute date</label>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="input-data">
+                <select name="year" required>
+                    <option value="SY" disabled selected>SCHOOL YEAR</option>
+                    <option value="">2020-2021</option>
+                    <option value="">2020-2021</option> 
+                    <option value="">PRELIM</option>
+                    <option value="">FINALS</option> </select>
+                <div class="underline">
+                
+        </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="input-data">
+                <select name="year" required>
+                    <option value="SEMESTER" disabled selected>SEMESTER</option>
+                    <option value="">FIRST</option>
+                    <option value="">SECOND</option> 
+                   </select>
+                <div class="underline">
+                
+        </div>
+            </div>
+        </div>
+        <div class="wrapper wrap">
+            <div class="input-data button">
+               <input type="file" class="upload-bx">
+        </div> 
+        
+        </div>
+        <div class="wrapper">
+            <div class="input-data button">
+            <button class="upload-btn"><i class='bx bxs-cloud-upload'></i>UPLOAD</button>
+        </div>
+    </form>
+    </div>
+    </div>
+           
+                    <div class="faculty-modal">
+                        <div class="faculty-bg">
+
+                            <div class="heading">
+                                <h3>Assign your collegues</h3>
+                                <button  class="exit">&times;</button>
+                            </div>
+                            <div class="small">
+                             <h5>Complete the form to add an recipients</h5> 
+                            </div>
+        
+                                <form>
+                                    <div class="wrapper">
+                                        <div class="input-data">
+                                            <select name="year" required>
+                                                <option value="PROF" disabled selected>PROFESSOR</option>
+                                                <option value="">DION</option>
+                                                <option value="">LEBRON</option> 
+                                                <option value="">GIANNIS</option>
+                                                <option value="">STEPH</option> </select>
+                                            <div class="underline">
+                                            
+                                    </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="wrapper">
+                                        <div class="input-data">
+                                            <select name="year" required>
+                                                <option value="SY" disabled selected>SY</option>
+                                                <option value="2020-2021">2020-2021</option>
+                                                <option value="2020-2021">2020-2021</option> 
+                                                <option value="2020-2021">2020-2021</option>
+                                                <option value="2020-2021">2020-2021</option> </select>
+                                            <div class="underline">
+                                            
+                                    </div>
+                                        </div>
+                                    </div>
+                    
+                        <div class="wrapper">
+                            <div class="input-data">
+                                <select name="SEM" required>
+                                    <option value="" disabled selected>SEMESTER</option>
+                                    <option value="">FIRST</option>
+                                    <option value="">SECOND</option> </select>
+                                <div class="underline">
+                        </div>
+                            </div>
+                        </div>
+                        <div class="wrapper">
+                            <div class="input-data button">
+                                <input type="text"  >
+                                <div class="underline">
+                                </div>
+                        </div> 
+                        <label for="">FILE</label>
+                        </div>
+                      
+                        <div class="wrapper">
+                            <div class="input-data button">
+                                <input type="date" id="schedule" name="schedule" >
+                                <div class="underline">
+                                </div>
+                        </div> 
+                        <label for="schedule">Dute date</label>
+                        </div>
+                        <div class="wrapper">
+                            <div class="input-data button">
+                            <button class="recruit"> <i class='bx bxs-user-detail'></i>SET UP</button>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+                        <script>
+
+                            var modalBtn = document.querySelector('.open-faculty');
+                            var modals = document.querySelector('.faculty-modal');
+                            var modalClose = document.querySelector('.exit')
+                            
+                            modalBtn.addEventListener('click' , function(){
+                                modals.classList.add('faculty-active');
+                            });
+                            
+                            modalClose.addEventListener('click', function (){
+                                modals.classList.remove('faculty-active');
+                            })
+
+                            window.onclick = function(event) {
+                            if (event.target == modals) {
+                                modals.classList.remove('faculty-active');
+                            }
+                            }
+                            
+                        
+                        </script>
+                        <script>
+
+                            var modalBtns = document.querySelector('.open-mytask');
+                            var modal = document.querySelector('.yourtask-modal');
+                            var modalClosed = document.querySelector('.btn-exit')
+                            
+                            modalBtns.addEventListener('click' , function(){
+                                modal.classList.add('task-active');
+                            });
+                            
+                            modalClosed.addEventListener('click', function (){
+                                modal.classList.remove('task-active');
+                            })
+
+                            window.onclick = function(event) {
+                            if (event.target == modal) {
+                                modal.classList.remove('task-active');
+                            }
+                            }
+                            
+                        
+                        </script>
+
+
+
+
+
+        </main>
+    </div>
+    </body>
+</html>

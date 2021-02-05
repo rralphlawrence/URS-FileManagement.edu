@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  
+    <link rel="stylesheet" href="../styles/prof.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>FMS |DEAN</title>
+</head>
+<body>
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="side-logo">
+            <h2><span id="logo" class ="fab fa-atlassian "></span><span>File Management</span></h2>
+        </div>
+        
+        <div class="sidebar-menu">
+            <div class="user-naming" id="naming">
+                <i id="icon" class='bx bx-user-circle nav__icon' ></i>
+                <h5>Carol carol</h5>
+                <h4>PROFESSOR</h4>
+               
+            </div>
+            <ul>
+                <li>
+                    <a href="prof-dashboard.html"><span class="bx bxs-dashboard"></span><span>Dashboard</span></a>
+                </li>
+            
+                <li>
+                    <a href="prof-account.html" ><span class="bx bx-user-pin"></span><span>Account</span></a>
+                </li>
+                <li>
+                    <a href="prof-files.html" ><span class="bx bx-file"></span><span>Imported files</span></a>
+                </li>
+                
+                <li>
+                    <a href="prof-task.html"><span class="bx bx-bookmark"></span><span>Task</span></a>
+                </li>
+                <li>
+                    <a href="#"  class="active"><span class="bx bxs-report"></span><span>REPORT</span></a>
+                </li>
+                <li>
+                    <a href="#"><span class="bx bx-log-out"></span><span>Logout</span></a>
+                </li>
+               
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        <header>
+            <h2>
+        
+                <label for="nav-toggle" id="bars">
+                    <span class="fas fa-bars"></span>
+                </label>
+                Dashboard
+            </h2>
+            
+            
+            <div class="search-wrapper">
+                <span class="fas fa-search"> <input type="search" placeholder="search here"></span>
+               
+            </div>
+            <div class="user-wrapper" onclick="myFunction();">
+                <i class='bx bx-user-circle nav__icon' ></i>
+            <div>
+               
+            </div>
+            </div>
+        </header>
+        <main>
+               
+            <div class="cover-task generate">
+                <div class="background">
+               <img class="pic" src="../img/generate.png" alt="">
+                </div>
+                <div class="task-word">
+                    
+                    <p>Generate your tabular data</p>
+                 
+                </div>
+            </div>
+
+           <form action="">
+           <div class="flex-container">
+                <div class="card">
+                    <div class="circle">
+                            <h4>School year</h4>
+                    </div>
+                    <div class="contents">
+                        <p>Choose school year for your desire output</p>
+                        <select name="" id="">
+                            <option value="">2020-2021</option>
+                            <option value="">2020-2021</option>
+                            <option value="">2020-2021</option>
+                            <option value="">2020-2021</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="circle">
+                            <h4>Semester</h4>
+                    </div>
+                    <div class="contents">
+                        <p>Choose semester for your desire output</p>
+                        <select name="" id="">
+                            <option value="">First</option>
+                            <option value="">Second</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="circle">
+                            <h4>PRINT</h4>
+                    </div>
+                    <div class="contents">
+                        <p>Print data from your records select semester and year first</p>
+                        <button>PRINT</button>
+                    </div>
+                </div>
+
+           </div>
+        </form>
+
+        </main>
+    </div>
+    </body>
+</html>
